@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="My project at Noroff FED." />
+    <meta name="author" content="Magne Kjørsvik" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Game Hub | Home</title>
+  </head>
+  <body id="article">
+    <header>
+      <a name="top"></a>
+      <nav>
+        <div class="navbar">
+          <a class="logo" href="index.html">
+            <img src="/images/redlogo.png" />
+          </a>
+          <form class="searchForm">
+            <input class="search" type="text" placeholder="  Search.." />
+            <button type="submit" class="searchBtn">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+          <div class="nav-icons">
+            <a href="#" class="login-btn"><span>Sign In</span></a>
+            <a href="#">
+              <i class="fas fa-shopping-cart"> 0</i>
+            </a>
+          </div>
+          <a href="#" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+        </div>
+        <div class="dropdown-menu">
+          <a>
+            <i class="fas fa-shopping-cart mobileCart"> 0</i>
+          </a>
+          <form class="searchForm">
+            <input class="search" type="text" placeholder="Search.." />
+            <button type="submit" class="searchBtn">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="store.html"><li>Store</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="contact.html" class="active"><li>Contact</li></a>
+          </ul>
+        </div>
+        <div class="red-bar-top">
+          <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="store.html"><li>Store</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="contact.html" class="active"><li>Contact</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main id="contact-main">
+      <div></div>
+      <div></div>
+      <div class="faq">
+        <h3>
+          If you have any questions about your order, please read our
+          <a href="#">FAQ</a> to see if that answers your question. If not, feel
+          free to contact us using this form.
+        </h3>
+      </div>
+      <div class="contact-container">
+        <form
+          class="contact-form"
+          name="contact-form"
+          id="contact-form"
+          action="submit.php"
+          method="POST"
+        >
+          <h3>* REQUIRED</h3>
+          <div>
+            <input type="text" name="fName" placeholder="First name *" />
+            <p class="form-error">Minium 2 characters required</p>
+          </div>
+          <div>
+            <input type="text" name="lName" placeholder="Last name *" />
+            <p class="form-error">Minium 2 characters required</p>
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="E-mail *" />
+            <p class="form-error">Invalid E-mail address</p>
+          </div>
+          <div>
+            <input type="number" name="pNumber" placeholder="Phone number" />
+            <p class="form-error">Invalid phone number</p>
+          </div>
+          <div>
+            <input type="number" name="tId" placeholder="Transaction id" />
+            <p class="form-error"></p>
+          </div>
+          <div>
+            <textarea
+              id="question"
+              name="question"
+              cols="40"
+              rows="16"
+              form="contact-form"
+            >
+My question *</textarea
+            >
+            <p class="form-error"></p>
+          </div>
+          <button type="submit" class="submit cta">SUBMIT</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="red-bar-bottom">
+        <a class="btt" href="#top"
+          ><i class="fas fa-arrow-circle-up"></i>
+          <h3>BACK TO TOP</h3></a
+        >
+      </div>
+      <div class="footer-nav">
+        <div>
+          <h3>Navigate</h3>
+          <ul class="navbar-links">
+            <a href="index.html"
+              ><li><h4>Home</h4></li></a
+            >
+            <a href="index.html"
+              ><li><h4>Store</h4></li></a
+            >
+            <a href="about.html"
+              ><li><h4>About</h4></li></a
+            >
+            <a href="contact.html"
+              ><li><h4>Contact</h4></li></a
+            >
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h3>Stay Connected</h3>
+          <p>Sign up to our newsletter and recieve the latest deals</p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              name="email"
+              id="signup"
+              placeholder="E-mail address..."
+            />
+            <button id="signup-btn">Sign-Up ></button>
+          </form>
+          <p id="signup-error">Please enter a valid e-mail address</p>
+        </div>
+        <div class="social-links">
+          <h3>Follow us</h3>
+          <a
+            class="social-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            ><img class="social-icon" src="/images/icons/facebook.svg" />
+            <h4>Facebook</h4></a
+          >
+          <a class="social-link" href="https://www.twitter.com/" target="_blank"
+            ><img class="social-icon" src="/images/icons/twitter.svg" />
+            <h4>Twitter</h4></a
+          >
+          <a class="social-link" href="https://www.youtube.com/" target="_blank"
+            ><img class="social-icon" src="/images/icons/youtube.svg" />
+            <h4>Youtube</h4></a
+          >
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/7dfec7dbb2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="/js/articles.js"></script>
+  </body>
+</html>
