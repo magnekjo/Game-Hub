@@ -578,7 +578,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1em;
+  margin-bottom: 2em;
   flex-wrap: wrap;
 }
 .category-bar p {
@@ -602,7 +602,6 @@ ul {
   margin: 0.2em;
   margin-left: 0;
 }
-
 /* STORE END */
 
 /* PRODUCT START */
