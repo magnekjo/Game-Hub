@@ -8,6 +8,7 @@ const image = document.querySelector(".i-img");
 const Iname = document.querySelector(".i-name");
 const price = document.querySelector(".i-price");
 const info = document.querySelector(".i-info");
+const metaTitle = document.getElementById("pMetaTitle");
 
 async function getProduct() {
   try {
@@ -23,6 +24,7 @@ async function getProduct() {
       4
     )}`;
     info.innerHTML = `${result.description}`;
+    metaTitle.innerHTML = `${result.name}`;
 
     console.log(result);
   } catch (error) {
